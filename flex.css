@@ -1,0 +1,12 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 130px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

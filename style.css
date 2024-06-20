@@ -1,0 +1,50 @@
+.tableBorder,
+.tableBorder th,
+.tableBorder td {
+  border: 1px solid black;
+}
+
+.tableBorderCollapse,
+.tableBorderCollapse th,
+.tableBorderCollapse td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tableStyleBorders,
+.tableStyleBorders th,
+.tableStyleBorders td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+.tableStyleBorders th,
+.tableStyleBorders td {
+  background-color: #eaddca;
+}
+
+.tableRoundBorders,
+.tableRoundBorders th,
+.tableRoundBorders td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.tableDottedBorder,
+.tableDottedBorder th,
+.tableDottedBorder td {
+  border-style: dotted;
+}
+
+.woTableRoundBorder th,
+.woTableRoundBorder td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.tableColorBorder,
+.tableColorBorder th,
+.tableColorBorder td {
+  border-style: solid;
+  border-color: #96d4d4;
+}

@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>HTML For Beginners</title>
+    <title>HTML For Beginners</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="HTML5favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleheading.css" />
+    <link rel="stylesheet" href="flex.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-custom">
+      <ul>
+        <a href="index.html"><img src="HTML5.png" class="logo" /></a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="htmltables.html">HTML Tables</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2>Create account</h2>
+
+    <form>
+      <label for="Name">Name</label>
+      <input type="text" placeholder="Name" id="Name" name="Name" />
+      <br />
+
+      <label for="Age">Age</label>
+      <input
+        type="number"
+        min="1"
+        max="130"
+        placeholder="Age"
+        id="Age"
+        name="Age"
+      />
+      <br />
+
+      <label for="userName">Username</label>
+      <input type="text" placeholder="Username" id="userName" name="userName" />
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="Email" id="email" name="email" />
+      <br />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Password"
+        id="password"
+        name="password"
+      />
+      <br />
+      <br />
+
+      <label for="campaignCheck"
+        >Do you agree with our
+        <a href="terms&conditions.html">Terms & Conditions</a>?</label
+      >
+      <input
+        type="checkbox"
+        id="campaignCheck"
+        name="termsConditions"
+        value="Yes"
+      />
+
+      <div>
+        <label>Do you want to recieve emails with our offers?</label>
+        <label for="recieveOffers1">Yes</label>
+        <input
+          type="radio"
+          id="recieveOffers1"
+          name="recieveOffers"
+          value="Yes"
+        />
+        <label for="recieveOffers2">No</label>
+        <input
+          type="radio"
+          id="recieveOffers2"
+          name="recieveOffers"
+          value="No"
+        />
+      </div>
+      <br />
+
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>
