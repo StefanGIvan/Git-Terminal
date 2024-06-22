@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+.centerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.readjustImage {
+  max-width: 100%;
+}
+
+.siteBackground {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-image: url(siteBackground.jpg);
+}
