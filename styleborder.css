@@ -48,3 +48,15 @@
   border-style: solid;
   border-color: #96d4d4;
 }
+
+.tableBlue thead {
+  background-color: lightblue;
+}
+
+.tableCyan td {
+  background-color: lightcyan;
+}
+
+.tableSmoke td {
+  background-color: whitesmoke;
+}

@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="navbar.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="HTML5favicon.png" />
+    <link rel="stylesheet" href="styleborder.css" />
     <link rel="stylesheet" href="styleheading.css" />
     <link rel="stylesheet" href="flex.css" />
     <link rel="stylesheet" href="contentstyle.css" />
@@ -36,7 +37,7 @@
     </div>
     <div class="content">
       <br />
-      <img class="readjustImage" src="htmlpic.png" alt="HTML Computer" />
+      <img class="imageDesign" src="htmlpic.png" alt="HTML Computer" />
       <p>
         Whether you are a novice, hoping to delve into the world of web design
         or an experienced webmaster keen to improve your skills, we’ve got
@@ -168,6 +169,7 @@
         alt="HTML Sublime Text"
         width="800"
         height="400"
+        class="imageDesign"
       />
       <br />
       <i>Sublime Text 3 has a mini-preview window on the right.</i>
@@ -197,7 +199,13 @@
         It is a tiny program to download and perform the functions you need for
         writing clean code.
       </p>
-      <img src="notepad++.webp" alt="Notepad++" width="800" height="400" />
+      <img
+        src="notepad++.webp"
+        alt="Notepad++"
+        width="800"
+        height="400"
+        class="imageDesign"
+      />
       <br />
       <i>This is Notepad ++. Far from glamorous but does the job.</i>
       <div class="flexRow">
@@ -232,6 +240,7 @@
         alt="Komodo Edit"
         width="800px"
         height="400px"
+        class="imageDesign"
       />
       <br />
       <i>Komodo isn’t one for a flash interface either but is simple to use.</i>
@@ -271,13 +280,8 @@
         </div>
         <blockquote>
           <p
-            style="
-              font-style: oblique;
-              font-family: Georgia, 'Times New Roman', Times, serif;
-              font-size: 21px;
-              display: block;
-              width: 30%;
-            "
+            class="quote flexRow"
+            style="border-left: 5px solid lightgray; padding: 20px"
           >
             "Your code’s front-end view varies from browser to browser – you
             will learn more about this with advanced CSS."
@@ -316,7 +320,287 @@
         alt="HTMLlayout"
         width="800px"
         height="800px"
+        class="imageDesign"
       />
+      <p>This is how your average HTML page is structured visually.</p>
+      <p class="subtitle">Further Tags</p>
+      <p>
+        Inside the &lt;head&gt; tag, there is one tag that is always included:
+        &lt;title&gt;, but there are others that are just as important:
+      </p>
+      <dl>
+        <dt class="redCode">&lt;title&gt;</dt>
+        <dd>
+          This is where we <b>insert the page name</b> as it will appear at the
+          top of the browser window or tab.
+        </dd>
+        <br />
+        <dt class="redCode">&lt;meta&gt;</dt>
+        <dd>
+          This is where information about the document is stored: character
+          encoding, name (page context), description.
+        </dd>
+      </dl>
+
+      <p>
+        <strong>Let’s try out a basic &lt;head&gt; section:</strong>
+      </p>
+      <div style="padding-left: 50px">
+        <p><span class="redCode">&lt;head&gt;</span></p>
+        <p>
+          <span class="redCode">&lt;title&gt;</span>My First Webpage<span
+            class="redCode"
+            >&lt;/title&gt;</span
+          >
+        </p>
+        <p>
+          <span class="redCode">&lt;meta</span> charset="UTF-8"<span
+            class="redCode"
+            >&gt;</span
+          >
+        </p>
+        <p>
+          <span class="redCode">&lt;meta</span> name="description" content="This
+          field contains information about your page. It is usually around two
+          sentences long."<span class="redCode">&gt;</span>.
+        </p>
+        <p>
+          <span class="redCode">&lt;meta</span> name="author" content="Conor
+          Sheils"<span class="redCode">&gt;</span>
+        </p>
+        <p><span class="redCode">&lt;/header&gt;</span></p>
+      </div>
+      <p class="title">Adding Content</p>
+      <p>
+        The HTML &lt;body&gt;is where we add the content which is designed for
+        viewing by human eyes.
+      </p>
+      <p>
+        This includes <b>text, images, tables, forms</b> and everything else
+        that we see on the internet each day.
+      </p>
+      <p class="title">How to Add HTML Headings To Your Web Page</p>
+      <p>In HTML, headings are written in the following elements:</p>
+      <ul type="disc" class="redCode" style="background-color: unset">
+        <li>
+          &lt;h1&gt;
+          <ul type="disc">
+            <li>
+              &lth2&gt;
+              <ul type="disc">
+                <li>
+                  &lth3&gt;
+                  <ul type="disc">
+                    <li>
+                      &lth4&gt;
+                      <ul type="disc">
+                        <li>
+                          &lth5&gt;
+                          <ul type="disc">
+                            <li>&lth6&gt;</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        As you might have guessed <span class="redCode">&lt;h1&gt;</span> and
+        <span class="redCode">&lt;h2&gt;</span> should be used for the most
+        important titles, while the remaining tags should be used for
+        sub-headings and less important text.
+      </p>
+      <p>
+        <b>Search engine bots use this order</b> when deciphering which
+        information is most important on a page.
+      </p>
+      <p class="title">Creating Your Heading</p>
+      <p>Let’s try it out. On a new line in the HTML editor, type:</p>
+      <div style="padding-left: 50px">
+        <p class="redCode">&lt;h1&gt;Welcome to My Page&lt;/h1&gt;</p>
+      </div>
+      <p>
+        And hit save. We will save this file as “index.html” in a new folder
+        called “my webpage.”
+      </p>
+      <blockquote>
+        <p class="quote displayBlock" style="width: 60%">
+          <strong>The Moment of Truth:</strong> Click the newly saved file and
+          your first ever web page should open in your default browser. It may
+          not be pretty it’s yours… all yours. *Evil laugh*
+        </p>
+      </blockquote>
+      <p>
+        Well let’s not get carried away; we’ve still got loads of great features
+        that we can add to your page.
+      </p>
+      <p class="title">How To Add Text In HTML</p>
+      <p>
+        Adding text to our HTML page is simple using an element opened with the
+        tag &lt;p&gt; which creates a new paragraph. We place all of our regular
+        text inside the element &lt;p&gt;.
+      </p>
+      <p>
+        When we write text in HTML, we also have a number of other elements we
+        can use to <b>control the text or make it appear in a certain way.</b>
+      </p>
+      <p class="subtitle">Other Key Elements</p>
+      <p>They are as follows:</p>
+
+      <div>
+        <table class="tableBlue">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Meaning</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tableCyan">
+              <td><b>&lt;b&gt;</b></td>
+              <td>Bold</td>
+              <td>Hightlight important information</td>
+            </tr>
+            <tr class="tableSmoke">
+              <td><b>&lt;strong&gt;</b></td>
+              <td>Strong</td>
+              <td>Similarly to bold, to highlight key text</td>
+            </tr>
+            <tr class="tableCyan">
+              <td><b>&lt;i&gt;</b></td>
+              <td>Italic</td>
+              <td>To denote text</td>
+            </tr>
+            <tr class="tableSmoke">
+              <td><b>&lt;em&gt;</b></td>
+              <td>Emphasised Text</td>
+              <td>Usually used as image captions</td>
+            </tr>
+            <tr class="tableCyan">
+              <td><b>&lt;mark&gt;</b></td>
+              <td>Marked Text</td>
+              <td>Highlight the background of the text</td>
+            </tr>
+            <tr class="tableSmoke">
+              <td><b>&lt;small&gt;</b></td>
+              <td>Small Text</td>
+              <td>To shrink the text</td>
+            </tr>
+            <tr class="tableCyan">
+              <td><b>&lt;strike&gt;</b></td>
+              <td>Striked Out Text</td>
+              <td>To place a horizontal line across the text</td>
+            </tr>
+            <tr class="tableSmoke">
+              <td><b>&lt;u&gt;</b></td>
+              <td>Underlined Text</td>
+              <td>Used for links or text highlights</td>
+            </tr>
+            <tr class="tableCyan">
+              <td><b>&lt;ins&gt;</b></td>
+              <td>Inserted Text</td>
+              <td>Displayed with an underline to show an inserted text</td>
+            </tr>
+            <tr class="tableSmoke">
+              <td><b>&lt;sub&gt;</b></td>
+              <td>Subscript Text</td>
+              <td>Typographical stylistic choice</td>
+            </tr>
+            <tr class="tableCyan">
+              <td><b>&lt;sup&gt;</b></td>
+              <td>Superscript Text</td>
+              <td>Another typographical presentation style</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        These tags <b>must</b> be opened and closed around the text in question.
+      </p>
+      <p>
+        Let’s try it out. On a new line in the HTML editor, type the following
+        HTML code:
+      </p>
+      <p class="redCode">
+        &lt;p&gt;Welcome to &lt;em&gt;my&lt;/em&gt; brand new website. This site
+        will be my &lt;strong&gt;new&lt;strong&gt; home on the web.&lt;/p&gt;
+      </p>
+      <p>
+        Don’t forget to <b>hit save and then refresh the page</b> in your
+        browser to see the results.
+      </p>
+      <p class="title">How To Add Links In HTML</p>
+      <p>As you may have noticed, the internet is made up of lots of links.</p>
+      <p>
+        Almost everything you click on while surfing the web is a link
+        <b>takes you to another page</b> within the website you are visiting or
+        to an external site.
+      </p>
+      <p>
+        Links are included in an attribute opened by the
+        <span class="blueCode">&lt;a&gt;</span>
+        tag. This element is the first that we’ve met which uses an attribute
+        and so it
+        <b>looks different to previously mentioned tags.</b>
+      </p>
+      <p class="subtitle">The Anchor Tag</p>
+      <p>The &lt;a&gt; (or anchor) opening tag is written in the format:</p>
+      <p class="redCode">
+        &lt;<span class="blueCode"
+          >a href="https://blogging.com/how-to-start-a-blog/</span
+        >"&lt;Your Link Text Here &lt;/a&gt;
+      </p>
+      <p>
+        The <b>first part</b> of the attribute
+        <b>points to the page that will open</b> once the link is clicked.
+      </p>
+      <p>
+        Meanwhile, the <b>second part</b> of the attribute contains the
+        <b>text which will be displayed</b> to a visitor in order to entice them
+        to click on that link.
+      </p>
+      <p>
+        If you are building your own website then you will most likely host all
+        of your pages on professional web hosting. In this case, internal links
+        on your website will &lt;a href="”mylinkedpage.html”"&gt;Linktle
+        Here&lt;/a&gt;.
+      </p>
+      <p class="subtitle">Let's Create An Anchor Tag</p>
+      <p>
+        Let’s try it out. Make a duplicate of the code from your current
+        index.html page. Copy / paste it into a new window in your HTML editor.
+      </p>
+      <p>
+        Save this new page as “page2.html” and ensure that it is saved in the
+        same folder as your index.html page.
+      </p>
+      <p>On page2.html add the following code:</p>
+      <p class="redCode">
+        &lt;a href="<span class="blueCode">http://www.google.com</span
+        >"&gt;Google&lt;/a&gt;
+      </p>
+      <p>
+        The <b>first part</b> of the attribute
+        <b>points to the page that will open</b> once the link is clicked.
+      </p>
+      <p>
+        Meanwhile, the <b>second part</b> of the attribute contains the
+        <b>text which will be displayed</b> to a visitor in order to entice them
+        to click on that link.
+      </p>
+      <p>
+        If you are building your own website then you will most likely host all
+        of your pages on professional web hosting. In this case, internal links
+        on your website will &lt;a href=”mylinkedpage.html”&gt;Linktle
+        Here&lt;/a&gt;.
+      </p>
+      <p class="subtitle">Let’s Create An Anchor Tag</p>
     </div>
   </body>
 </html>

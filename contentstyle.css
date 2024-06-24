@@ -4,7 +4,6 @@
   align-items: flex-start;
   max-width: 50%;
   margin: auto;
-  background: white;
   padding: 10px;
 }
 
@@ -14,8 +13,16 @@
   align-items: center;
 }
 
-.readjustImage {
+.imageDesign {
   max-width: 100%;
+  border-style: outset;
+}
+
+.quote {
+  font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 21px;
+  border-left: 5px solid lightgray;
 }
 
 .siteBackground {
@@ -24,7 +31,7 @@
 }
 
 body {
-  background-image: url(siteBackground.jpg);
+  background-image: url(siteBackground.png);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;

@@ -19,3 +19,13 @@
   font-size: 22px;
   font-weight: 600;
 }
+
+.redCode {
+  color: #d1254e;
+  background-color: #f9f2f4;
+  font-weight: 500;
+}
+
+.blueCode {
+  color: #3f88c5;
+}
