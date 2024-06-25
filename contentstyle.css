@@ -5,6 +5,7 @@
   max-width: 50%;
   margin: auto;
   padding: 10px;
+  background-color: transparent;
 }
 
 .centerTitle {
@@ -22,7 +23,20 @@
   font-style: oblique;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 21px;
+  padding-left: 20px;
   border-left: 5px solid lightgray;
+}
+
+.blockCode {
+  box-sizing: border-box;
+  display: block;
+  height: fit-content;
+  width: 700px;
+  padding-left: 10px;
+  color: #333;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .siteBackground {

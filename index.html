@@ -586,21 +586,626 @@
         >"&gt;Google&lt;/a&gt;
       </p>
       <p>
-        The <b>first part</b> of the attribute
-        <b>points to the page that will open</b> once the link is clicked.
+        This will create a link to Google on page 2. Hit save and return to your
+        index.html page.
+      </p>
+      <p>On a new line on index.html add the following code:</p>
+      <p class="redCode">
+        &lt;a href="*folder(s)*/page2.html"&gt;Page2&lt;/a&gt;
       </p>
       <p>
-        Meanwhile, the <b>second part</b> of the attribute contains the
-        <b>text which will be displayed</b> to a visitor in order to entice them
-        to click on that link.
+        Ensure the folder path to the file (page2.html) is correct.
+        <b>Hit save and preview</b> index.html in your browser.
       </p>
       <p>
-        If you are building your own website then you will most likely host all
-        of your pages on professional web hosting. In this case, internal links
-        on your website will &lt;a href=”mylinkedpage.html”&gt;Linktle
-        Here&lt;/a&gt;.
+        If <b>everything is correct</b> then
+        <b>you will see a link which will take you to your second page</b>. On
+        the second page, there will be a link that will take you to google.com.
       </p>
-      <p class="subtitle">Let’s Create An Anchor Tag</p>
+      <p class="title">How To Add Images In HTML To Your Website</p>
+      <p>
+        In today’s modern digital world, images are everything. The &lt;img&gt;
+        tag has everything you need to display images on your site. Much like
+        the &lt;a&gt; anchor element, &lt;img&gt; also contains an attribute.
+      </p>
+      <p>
+        The attribute features information for your computer regarding the
+        <b>source, height, width</b> and <b>alt text</b> of the image.
+      </p>
+      <p class="subtitle">Styling and Formats</p>
+      <img
+        src="htmlHomepageProperty.webp"
+        alt="HTML Homepage Property"
+        style="border-style: outset; width: 800; height: 400"
+      />
+      <br />
+      <i
+        >You can check the file type of an image by right-clicking the item and
+        selecting ‘Properties’.</i
+      >
+      <p>
+        You can also define borders and other styles around the image using the
+        class attribute. However, we shall cover this in a later tutorial.
+      </p>
+      <p>
+        The file types generally used for <b>image files online are:</b> .jpg,
+        .png, and (less and less) .gif.
+      </p>
+      <p>
+        Alt text is important to
+        <b>ensure that your site is ranked correctly</b> on search sites and
+        also for visually impaired visitors to your site.
+      </p>
+      <p>
+        The <span class="blueCode">&lt;img&gt;</span> tag normally is written as
+        follows:
+      </p>
+      <p class="redCode">
+        &lt;img src="yourimage.jpg" alt="Describe the image" height="X"
+        width="X"&gt;
+      </p>
+      <p>Let’s try it out.</p>
+      <p class="subtitle">Create Your Own Image With An Alt Text</p>
+      <div class="flexRow">
+        <div>
+          <p>
+            Save an image (.jpg, .png, .gif format) of your choice in the same
+            folder where you’ve saved index.html and page2.html. Call this image
+            “testpic.jpg.”
+          </p>
+          <p>
+            On a new line in your HTML editor <b>enter the following code:</b>
+          </p>
+          <p class="redCode">
+            &lt;img src="testpic.jpg" alt="This is a test image" height="42"
+            width="42"&gt;
+          </p>
+          <p>
+            Hit <b>save and preview</b> the index.html page in your browser.
+          </p>
+        </div>
+        <div class="quote" style="height: fit-content">
+          <p>
+            Don’t be afraid to play around with the test code – it’s a great way
+            to have fun while learning.
+          </p>
+        </div>
+      </div>
+      <p class="title">How To Make an HTML List</p>
+      <p>
+        In web design, there are <b>3 different types of lists</b> which you may
+        wish to add to your site.
+      </p>
+      <p class="subtitle">Ordered List</p>
+      <p>
+        The first is an &lt;ol&gt;: This is an ordered list of contents. For
+        example:
+      </p>
+      <ol>
+        <li>An item</li>
+        <li>Another item</li>
+        <li>Another goes here.</li>
+      </ol>
+      <p>
+        Inside the &lt;ol&gt; tag we list each item on the list inside
+        &lt;li&gt; &lt;/li&gt; tags.
+      </p>
+      <p>For example:</p>
+      <div class="blockCode">
+        <p>&lt;ol&gt;</p>
+        <p>&lt;li&gt;An item &lt;/li&gt;</p>
+        <p>&lt;li&gt;Another item &lt;/&gt;</p>
+        <p>&lt;li&gt;Another goes here &lt;/li&gt;</p>
+        <p>&lt;/ol&gt;</p>
+      </div>
+      <p class="subtitle">Unordered List</p>
+      <p>
+        The second type of list that you may wish to include is an &lt;ul&gt;
+        unordered list. This is better known as a <b>bullet point list</b> and
+        contains no numbers.
+      </p>
+      <p>An example of this is:</p>
+      <div class="blockCode">
+        <p>&lt;ul&gt;</p>
+        <p>&lt;li&gt;This is &lt;/li&gt;</p>
+        <p>&lt;li&gt;An Unordered &lt;/li&gt;</p>
+        <p>&lt;li&gt;List &lt;/li&gt;</p>
+        <p>&lt/ul&gt;</p>
+      </div>
+      <p class="subtitle">Definition List</p>
+      <p>
+        Finally, you may wish to include a definition list
+        <span class="blueCode">&lt;dl&gt;</span> on your page. An example of a
+        &lt;dl&gt; list is as follows:
+      </p>
+      <p class="miniSubtitle">HTML</p>
+      <p>
+        Hypertext markup language is a programming language used to create web
+        pages and is rendered by a web browser.
+      </p>
+      <p>The code used for the above is as follows:</p>
+      <div class="blockCode">
+        <p>&lt;dl&gt;</p>
+        <p>&lt;dt&gt;Item&lt;/dt&gt;</p>
+        <p>&lt;dd&gt;The definition goes here&lt;/dd&gt;</p>
+        <p>&lt;.dl&gt;</p>
+      </div>
+      <p>
+        Let’s try it out. Open index.html and on a new line, enter the following
+        HTML:
+      </p>
+      <div class="blockCode">
+        <p>
+          &lt;p&gt;This website will have the following benefits for my
+          business:&lt;/p&gt;
+        </p>
+        <p>&lt;ul&gt;</p>
+        <p>&lt;li&gt;Increased traffic &lt/li&gt;</p>
+        <p>&ltli&gt;Global Reach&lt;/li&gt;</p>
+        <p>&lt;li&gt;Promotional Opportunities&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+      </div>
+      <p>
+        Now <b>hit save and check out the results</b> in your browser. If
+        everything worked out then it will display a bullet-pointed table
+        displaying the information above.
+      </p>
+      <p class="title">How To Add Tables In HTML</p>
+      <img
+        src="htmlTable.png"
+        alt="HTML Table"
+        style="width: 800; height: 400"
+      />
+      <i
+        >Tables can be styled in various ways – Codepen.io offers live previews
+        to keep track of changes.</i
+      >
+      <p>
+        Another way to keep your website looking <b>neat and orderly</b> is
+        through the use of a table.
+      </p>
+      <div class="flexRow" style="gap: 20px">
+        <div
+          class="quote"
+          style="
+            border-right: 5px solid lightgrey;
+            padding-right: 20px;
+            padding-left: 0;
+            border-left: none;
+            height: 250;
+          "
+        >
+          <p style="height: fit-content">
+            <b>Do not use a table to layout your website.</b> Search engines
+            hate it and it is generally a bad idea. Just… don’t. See our CSS
+            tutorial, instead.
+          </p>
+        </div>
+        <div>
+          <p>
+            This is definitely the most complicated part of this tutorial,
+            however, learning it will certainly pay off in the long-run.
+          </p>
+          <p>
+            With this in mind, tables can still be a
+            <b>useful way to present content</b> on your page.
+          </p>
+          <p class="subtitle">What Does a Table Consist Of?</p>
+          <p>
+            When drawing a table we must open an element with the &lt;table&gt;
+            opening tag. Inside this tag, we structure the table using the table
+            rows, &lt;tr&gt;, and cells, &lt;td&gt;.
+          </p>
+        </div>
+      </div>
+      <p>An example of an HTML table is as follows:</p>
+      <div class="blockCode">
+        <p>&lt;table&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lttd&gt;Row 1 - Column 1&lt;/td&gt;</p>
+        <p>&lttd&gt;Row 1 - Column 2&lt;/td&gt;</p>
+        <p>&lttd&gt;Row 1 - Column 3&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;Row 2 - Column 1&lt;/td&gt;</p>
+        <p>&lt;td&gt;Row 2 - Column 2&lt;/td&gt;</p>
+        <p>&lt;td&gt;Row 2 - Column 3&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/table&gt;</p>
+      </div>
+      <p>This will produce a 2-row table with 3 cells in each row.</p>
+      <p>
+        Tables can get quite complicated, so be sure to check out our special
+        HTML tables tutorial.
+      </p>
+      <p class="subtitle">Table Tags</p>
+      <p>
+        However, watch out for these tags so that you can
+        <b>recognize them and use them</b> as your skills develop.
+      </p>
+      <p>
+        Here are the tables tags presented in a table – pun totally intended.
+      </p>
+      <div>
+        <table>
+          <thead class="tableBlue">
+            <tr>
+              <td><b>Table Tag</b></td>
+              <td><b>Meaning</b></td>
+              <td><b>Location</b></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tableCyan">
+              <td><b>&lt;thead&gt;</b></td>
+              <td>Table Head</td>
+              <td>Top of the table</td>
+            </tr>
+            <tr class="tableSmoke">
+              <td><b>&lt;tbody&gt;</b></td>
+              <td>Table Body</td>
+              <td>Content of the table</td>
+            </tr>
+            <tr class="tableCyan">
+              <td>&lt;tfoot&gt;</td>
+              <td>Table Foot</td>
+              <td>Bottom of the table</td>
+            </tr>
+            <tr class="tableSmoke">
+              <td>&ltcolgroup&gt;</td>
+              <td>Column Group</td>
+              <td>Within the table</td>
+            </tr>
+            <tr class="tableCyan">
+              <td>&lt;th&gt;</td>
+              <td>Table Header</td>
+              <td>Data cekk for the table header</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Tables, borders, spacing are usually styled using CSS but we will cover
+        this in a later tutorial.
+      </p>
+      <p class="subtitle">Let's Make a Table</p>
+      <p>
+        Go to a new line on the index.html page within your text editor. Enter
+        the following HTML code:
+      </p>
+      <div class="blockCode">
+        <p>&lt;table&gt;</p>
+        <p>&lttr&gt;</p>
+        <p>&lt;td&gt;Row 1 - Column 1&lt;/td&gt;</p>
+        <p>&lt;td&gt;Row 1 - Column 2&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;Row 2 - Column 1&lt;/td&gt;</p>
+        <p>&lt;td&gt;Row 2 - Column 2&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/table&gt;</p>
+      </div>
+      <b>Hit save and preview it in your browser.</b>
+      <p><b>Congratulations:</b> You did it!</p>
+      <p class="title">How To Close an HTML Document</p>
+      <p>
+        You’ve <b>reached the end of our absolute beginners HTML tutorial.</b>
+      </p>
+      <p>
+        The final step we need to complete is to close the &lt;body&gt; and
+        &lt;html&gt; tags at the end of each page using the following HTML code:
+      </p>
+      <div class="blockCode">
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+      </div>
+      <div
+        class="flexRow"
+        style="gap: 20px; padding-top: 30px; padding-bottom: 30px"
+      >
+        <div
+          class="quote"
+          style="
+            border-right: 5px solid lightgrey;
+            padding-right: 20px;
+            padding-left: 0;
+            border-left: none;
+            height: 170;
+          "
+        >
+          <p style="height: fit-content">
+            In this guide, you’ve learned how to create basic HTML web pages.
+          </p>
+        </div>
+        <div>
+          <p>
+            You’ve also learned to add headings, text, images, links, lists and
+            basic tables to these pages.
+          </p>
+          <p class="subtitle">What’s Next?</p>
+          <p>
+            You can now use this knowledge to create your own web pages
+            containing these features and link them together.
+          </p>
+        </div>
+      </div>
+      <p>
+        We suggest that you further enhance your skills by experimenting with
+        the code you’ve learned using different variables. You may also wish to
+        learn about how to make your pages beautiful using CSS.
+      </p>
+      <p>The power to create your own website is now in your hands.</p>
+      <p class="title">Troubleshooting</p>
+      <p>
+        In case things didn’t work out as intended, simply check your HTML code
+        against the examples below.
+      </p>
+      <br />
+
+      <b>Index.html troubleshooting code:</b>
+      <div class="blockCode">
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt;My First Webpage&lt;/title&gt;</p>
+        <p>&lt;meta charset="UTF-8"&gt;</p>
+        <p>
+          &lt;meta name="description" content="This is my first website. It
+          includes lots of information about my life."&gt;
+        </p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;h1&gt;Welcome to my webpage&lt;/h1&gt;</p>
+        <p>
+          &lt;p&gt;Welcome to &lt;em&gt;my&lt;/em&gt; brand new
+          website.&lt;/p&gt;
+        </p>
+        <p>
+          &lt;p&gt;This site will be my &lt;strong&gt;new&lt;/strong&gt; home on
+          the web.&lt;/p&gt;
+        </p>
+        <p>&lt;a href="/page2.html"&gt;Page2&lt;/a&gt;</p>
+        <p>
+          &lt;img src="testpic.jpg" alt="This is a test image" height="42"
+          width="42"&gt;
+        </p>
+        <p>
+          &lt;p&gt;This website will have the following benefits for my
+          business:&lt;/p&gt;
+        </p>
+        <p>&lt;ul&gt;</p>
+        <p>&lt;li&gt;Increased traffic &lt;/li&gt;</p>
+        <p>&lt;li&gt;Global Reach&lt;/li&gt;</p>
+        <p>&lt;li&gt;Promotional Opportunities&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <p>&lt;table&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;Row 1 - Column 1&lt;/td&gt;</p>
+        <p>&lt;td&gt;Row 1 - Column 2&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;Row 2 - Column 1&lt;/td&gt;</p>
+        <p>&lt;td&gt;Row 2 - Column 2&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/table&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+      </div>
+      <br />
+      <br />
+
+      <b>page2.html troubleshooting code:</b>
+      <div class="blockCode">
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt;My First Webpage&lt;/title&gt;</p>
+        <p>&lt;meta charset="UTF-8"&gt;</p>
+        <p>
+          &lt;meta name="description" content="This is my first website. It
+          includes lots of information about my life."&gt;
+        </p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;h1&gt;Welcome to my webpage&lt;/h1&gt;</p>
+        <p>&lt;p&gt;Welcome to <em>my</em> brand new website.&lt;/p&gt;</p>
+        <p>
+          &lt;p&gt;This site will be my &lt;strong&gt;new&lt;strong&gt; home on
+          the web.&lt;/p&gt;
+        </p>
+        <p>&lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+      </div>
+      <br />
+      <br />
+
+      <p class="title">Our Other HTML Tutorials</p>
+      <p>
+        Our HTML tutorials teach you how to create a personal website or site
+        for your business, without forcing you to learn unnecessary theory.
+      </p>
+      <p>Our most popular beginner’s tutorials include:</p>
+
+      <div>
+        <p class="blueP">HTML Tables</p>
+        <p style="padding-left: 30px">
+          These tutorials guide you through the
+          <b>process of creating tables</b> for your exact needs. Tables were
+          once the primary means by which pages were laid out.
+        </p>
+        <p>
+          With the adoption of CSS, this is no longer necessary. And for good
+          reason, because this created pages that were almost impossible to
+          maintain. But for the purpose of display tables, HTML offers all the
+          tools you will need.
+        </p>
+      </div>
+
+      <div>
+        <p class="blueP">Links</p>
+        <p style="padding-left: 30px">
+          There’s a lot more to links than just moving from page to page. In
+          this tutorial, you will learn
+          <b>how to navigate pages and download files.</b>
+        </p>
+        <p style="padding-left: 30px">
+          You’ll also learn how to make your links as user-friendly as possible.
+          Links are the core of HTML so this is important stuff.
+        </p>
+      </div>
+
+      <div>
+        <p class="blueP">Forms</p>
+        <p style="padding-left: 30px">
+          Forms are important for marketing as well as creating web applications
+          and more.
+        </p>
+        <p>
+          This detailed tutorial will guide you from the
+          <b>very basics to the most advanced uses of forms</b> with CSS and
+          JavaScript.
+        </p>
+      </div>
+
+      <div>
+        <p class="blueP">Fonts</p>
+        <p style="padding-left: 30px">
+          At one time, the font was an HTML tag and it made creating
+          maintainable web pages a nightmare. Now
+          <b>we use CSS to set fonts and their attributes</b> like weight,
+          style, and size.
+        </p>
+        <p>
+          And by using CSS, you can set the look of your pages consistently with
+          the ability to radically change them by changing just a few lines of
+          code. This tutorial explains all.
+        </p>
+      </div>
+
+      <div>
+        <p class="blueP">Images</p>
+        <p style="padding-left: 30px">
+          With the use of the img tag and CSS, you can do just about anything
+          you want.
+        </p>
+        <p>
+          But with HTML5, you have the addition of the
+          <span class="redCode">picture</span> and
+          <span class="redCode">figure</span>
+          elements. <b>Find out how to do images right</b> with this thorough
+          tutorial.
+        </p>
+      </div>
+      <p class="title">Intermediate & Advanced Tutorials</p>
+      <p>
+        We’ve plenty of topics for <b>intermediate and advanced</b> HTML
+        learners, too:
+      </p>
+
+      <div>
+        <p class="blueP">CSS tutorials</p>
+        <p style="padding-right: 30px">
+          CCS, Cascading Style Sheets, allow you to design and ornament your web
+          pages.
+        </p>
+        <p style="padding-right: 30px">
+          This tutorial takes you from the
+          <b>beginning to being fluent in CSS</b> so that you can create complex
+          pages that are easily maintained.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 30px">
+        <p class="blueP">JavaScript</p>
+        <img
+          src="htmlJs.gif"
+          alt="HTML and Javascript"
+          style="width: 800; height: 400"
+        />
+      </div>
+      <i
+        >Javascript is often used to add dynamic elements (like this countdown
+        clock) to web pages.</i
+      >
+      <div style="padding-left: 30px">
+        <p>
+          JavaScript is arguably the most important web coding language after
+          HTML. Most websites you visit employ at least a little bit of
+          JavaScript coding.
+        </p>
+        <p>
+          Along with HTML and CSS, JavaScript makes the trinity of webpage
+          <b>design and construction.</b>
+        </p>
+        <p>
+          This tutorial assumes you know nothing and gets you going with this
+          essential programming language. It even introduces you to advanced
+          subjects like AJAX and jQuery.
+        </p>
+      </div>
+      <p class="blueCode">HTML 5</p>
+      <div style="padding-left: 30px">
+        <p>
+          HTML5 has revolutionized webpage markup with things like
+          <b>semantic and multimedia elements.</b> Find out all about the new
+          goodies that are waiting to be explored.
+        </p>
+      </div>
+
+      <p class="blueCode">Semantic Markup</p>
+      <div style="padding-left: 30px">
+        <p>
+          This tutorial introduces you to semantic markup that allows you to
+          construct pages so that their structure reveals their content.
+        </p>
+        <p>
+          This is especially useful as search engines become more and more
+          advanced — allowing them to
+          <b>find users the right information</b> they are looking for.
+        </p>
+      </div>
+
+      <p class="blueCode">Logical Tags</p>
+      <div style="padding-right: 30px">
+        <p>
+          You may have noticed that few people use the
+          <span class="redCode">i</span> tag for italics and instead use the
+          <span class="redCode">em</span> tag.
+        </p>
+        <p>
+          This is because the <span class="redCode">i</span> tag is just a
+          <b>formatting tag</b> and thus should really be accomplished with CSS.
+          The
+          <span class="redCode">em</span>
+          has meaning: the text is emphasized.
+        </p>
+        <p>
+          <b>Logical tags</b> like <span class="redCode">em</span> and
+          <span class="redCode">cite</span> are important in the same way as
+          semantic markup. Find more in this brief discussion.
+        </p>
+      </div>
+
+      <p class="title">HTML Reference Guides</p>
+      <p>
+        Meanwhile, our detailed HTML tags reference lets you find out more about
+        every single HTML tag from <span class="redCode">&lt;a&gt;</span> to
+        <span class="redCode">&lt;xmp&gt;</span>.
+      </p>
+      <p>
+        Each tag reference <b>includes background and examples,</b> which show
+        how to use the tag in question. It’s perfect for when you want to
+        troubleshoot problems while coding HTML.
+      </p>
+      <p>
+        Below are some of the <b>most common tags</b> — used by nearly every
+        website you encounter:
+      </p>
+      <div style="display: inline-block">
+        <p class="redCode">Button</p>
+        <p class="blueCode">Tag</p>
+      </div>
     </div>
   </body>
 </html>
