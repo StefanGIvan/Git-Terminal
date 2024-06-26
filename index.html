@@ -329,14 +329,14 @@
         &lt;title&gt;, but there are others that are just as important:
       </p>
       <dl>
-        <dt class="redCode">&lt;title&gt;</dt>
-        <dd>
+        <dt class="redCode" style="width: 43px">&lt;title&gt;</dt>
+        <dd style="padding-top: 10px">
           This is where we <b>insert the page name</b> as it will appear at the
           top of the browser window or tab.
         </dd>
         <br />
-        <dt class="redCode">&lt;meta&gt;</dt>
-        <dd>
+        <dt class="redCode" style="width: 53px">&lt;meta&gt;</dt>
+        <dd style="padding-top: 10px">
           This is where information about the document is stored: character
           encoding, name (page context), description.
         </dd>
@@ -730,6 +730,7 @@
         <p>&lt;dd&gt;The definition goes here&lt;/dd&gt;</p>
         <p>&lt;.dl&gt;</p>
       </div>
+      <br />
       <p>
         Let’s try it out. Open index.html and on a new line, enter the following
         HTML:
@@ -756,6 +757,7 @@
         alt="HTML Table"
         style="width: 800; height: 400"
       />
+      <br />
       <i
         >Tables can be styled in various ways – Codepen.io offers live previews
         to keep track of changes.</i
@@ -764,7 +766,10 @@
         Another way to keep your website looking <b>neat and orderly</b> is
         through the use of a table.
       </p>
-      <div class="flexRow" style="gap: 20px">
+      <div
+        class="flexRow"
+        style="gap: 20px; padding-top: 30px; padding-bottom: 30px"
+      >
         <div
           class="quote"
           style="
@@ -813,6 +818,7 @@
         <p>&lt;/tr&gt;</p>
         <p>&lt;/table&gt;</p>
       </div>
+      <br />
       <p>This will produce a 2-row table with 3 cells in each row.</p>
       <p>
         Tables can get quite complicated, so be sure to check out our special
@@ -864,6 +870,7 @@
           </tbody>
         </table>
       </div>
+      <br />
       <p>
         Tables, borders, spacing are usually styled using CSS but we will cover
         this in a later tutorial.
@@ -885,6 +892,7 @@
         <p>&lt;/tr&gt;</p>
         <p>&lt;/table&gt;</p>
       </div>
+      <br />
       <b>Hit save and preview it in your browser.</b>
       <p><b>Congratulations:</b> You did it!</p>
       <p class="title">How To Close an HTML Document</p>
@@ -1202,10 +1210,213 @@
         Below are some of the <b>most common tags</b> — used by nearly every
         website you encounter:
       </p>
-      <div style="display: inline-block">
+      <div class="flexRow" style="gap: 10px">
         <p class="redCode">Button</p>
         <p class="blueCode">Tag</p>
       </div>
+      <img
+        src="htmlButton.gif"
+        alt="HTML Button"
+        style="width: 800; height: 400"
+      />
+      <br />
+      <i
+        >Buttons can be customized in astonishing ways using CSS and JS. This is
+        Codepen.io – an online editing and code sharing platform.</i
+      >
+      <p style="padding-left: 30px">
+        A tag that puts a <span class="redCode">button</span> onto a webpage. It
+        <b>must be combined with JavaScript</b> in order to do anything. This
+        page provides all the details you need.
+      </p>
+      <div class="flexRow" style="gap: 10px">
+        <p class="redCode">Anchor</p>
+        <p class="blueCode">Tag</p>
+      </div>
+      <p style="padding-left: 30px">
+        Links are far more powerful than new HTML coders realize. Find out all
+        you need to know to make the greatest use of the
+        <span class="redCode">a</span> tag.
+      </p>
+      <div class="flexRow" style="gap: 10px">
+        <p class="redCode">Link</p>
+        <p class="blueCode">Tag</p>
+      </div>
+      <div style="padding-left: 30px">
+        <p>
+          The <span class="redCode">link</span> tag can be confusing because it
+          is easy to mix up with “links” (defined with the
+          <span class="redCode">a</span> tag).
+        </p>
+        <p>
+          But <span class="redCode">link</span> is a very powerful tag that
+          allows you to <b>link an HTML document</b> to an outside resource like
+          a CSS file. Find out all you need to know here.
+        </p>
+      </div>
+      <p class="blueCode">Image Manipulatiuon</p>
+      <img
+        src="htmlImageManipulation.webp"
+        alt="HTML Image Manipulation"
+        style="width: 1400; height: 100"
+      />
+      <br />
+      <i>This is an image code with various attributes.</i>
+      <div style="padding-left: 30px">
+        <p>
+          Although HTML makes displaying images easy with the
+          <span class="redCode">img</span> tag, by using some JavaScript, you
+          can <b>change images on the fly.</b>
+        </p>
+        <p>This tutorial shows you how.</p>
+      </div>
+      <p class="blueCode">Character Codes</p>
+      <div style="padding-left: 30px">
+        <p>
+          Another great aspect of HTML is its ability to use non-keyboard keys
+          like ® (<span class="redCode">&amp;amp;reg;</span>) and © (<span
+            class="redCode"
+            >&amp;amp;copy;</span
+          >).
+        </p>
+        <p>
+          This reference provides you with the information you need to
+          <b>make full use of these symbols.</b>
+        </p>
+      </div>
+
+      <p class="blueCode">Headings</p>
+      <p style="padding-left: 30px">
+        Headings are a way to make text stand out by breaking up the page.
+      </p>
+
+      <p class="blueCode">Paragraph</p>
+      <p style="padding-left: 30px">Paragraphs determine line spacing.</p>
+
+      <p class="blueCode">Italics</p>
+      <p style="padding-left: 30px">
+        Create <i>italics</i> text just like in a word processor.
+      </p>
+
+      <p class="blueCode">Bold</p>
+      <p style="padding-left: 30px"><b>Bold</b> text emphasizes keywords</p>
+
+      <p class="blueCode">Anchor</p>
+      <p style="padding-left: 30px">
+        The anchor tag is most commonly used to create links in combination with
+        the <b>href</b> attribute.
+      </p>
+
+      <p class="blueCode">Unordered List</p>
+      <p style="padding-left: 30px">
+        Unnumbered lists of bullet points use the Unordered List tag.
+      </p>
+
+      <p class="blueCode">List Item</p>
+      <p style="padding-left: 30px">
+        Each line on a list is enclosed by a List Item tag.
+      </p>
+
+      <p class="blueCode">Blockquote</p>
+      <p style="padding-left: 30px">
+        Blockquote tags are used to enclose quotations from people. This tag
+        helps to differentiate the quote from the text around it.
+      </p>
+
+      <p class="blueCode">Horizaontal Rule</p>
+      <p style="padding-left: 30px">
+        A horizontal rule is a straight line commonly used for dividing areas of
+        a webpage.
+      </p>
+
+      <p class="blueCode">Image</p>
+      <p style="padding-left: 30px">
+        Learn the image tag to find out how to code pictures into your page.
+      </p>
+
+      <p class="blueCode">Divison</p>
+      <p style="padding-left: 30px">
+        The Division tag defines specific layout styles within CSS.
+      </p>
+
+      <p class="title">HTML Attributes Reference Guide</p>
+      <p>
+        The HTML attributes section is designed to allow you to get up close and
+        personal with the HTML attributes that you know and love while
+        introducing you to some <b>advanced attributes</b> along the way.
+      </p>
+      <br />
+
+      <p>Our <b>most popular attributes include:</b></p>
+      <div style="padding-left: 30px">
+        <p>
+          <span
+            class="blueCode"
+            style="background-color: #f9f2f4; border-radius: 4px"
+            >&lt;img src=""&gt;</span
+          >
+          — Learn how to <b>pick the image</b> to display.
+        </p>
+        <p>
+          <span
+            class="blueCode"
+            style="background-color: #f9f2f4; border-radius: 4px"
+            >&lt;img alt=""&gt;</span
+          >
+          — This sets the <b>name of the image</b> for those who can’t see the
+          image for one reason or another.
+        </p>
+        <p>
+          <span
+            class="blueCode"
+            style="background-color: #f9f2f4; border-radius: 4px"
+            >&lt;a target=""&gt;</span
+          >
+          – Links don’t have to fill the current page. There are other, often
+          better, options.
+        </p>
+        <p>
+          <span
+            class="blueCode"
+            style="background-color: #f9f2f4; border-radius: 4px"
+            >&lt;a href=""&gt;</span
+          >
+          — The basic link attribute sets
+          <b>where it will transport the user to.</b>
+        </p>
+        <p>
+          <span
+            class="blueCode"
+            style="background-color: #f9f2f4; border-radius: 4px"
+            >&lt;body background-*=""&gt;</span
+          >
+          — Learn to set a webpage’s <b>background color, image, or more.</b>
+        </p>
+        <p>
+          <span
+            class="blueCode"
+            style="background-color: #f9f2f4; border-radius: 4px"
+            >&lt;table bordercolor=""&gt;</span
+          >
+          — Find out how to set the border color of your tables.
+        </p>
+      </div>
+      <p class="title">HTML Cheat Sheet</p>
+      <p>
+        If you are pretty confident in your HTML abilities but sometimes feel
+        like double-checking your work then look no further than our HTML cheat
+        sheet (which is in progress).
+      </p>
+      <p>
+        This handy guide will show you everything you need to know about HTML in
+        a <b>super-compact, and easy-to-understand format.</b> It provides
+        information on particular tags and specific attributes in an
+        alphabetized format.
+      </p>
+      <p>
+        You can bookmark the page for easy retrieval. Or you can print out our
+        PDF so you can keep it by your desk.
+      </p>
     </div>
   </body>
 </html>
